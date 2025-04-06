@@ -8,7 +8,7 @@ function ViewResume() {
   const handleSearch = async () => {
     try {
       const formattedEmail = email.trim().toLowerCase();
-      const res = await fetch(`http://localhost:5000/api/resumes/list/${formattedEmail}`);
+      const res = await fetch(`https://resume-builder-2-q4xd.onrender.com/api/resumes/list/${formattedEmail}`);
       if (!res.ok) throw new Error('Resume not found');
 
       const data = await res.json();

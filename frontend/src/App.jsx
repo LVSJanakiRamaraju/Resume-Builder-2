@@ -14,7 +14,7 @@ const App = () => {
 
     const fetchResumes = async () => {
         try {
-            const response = await axios.get("http://localhost:5000/api/resumes/list");
+            const response = await axios.get("https://resume-builder-2-q4xd.onrender.com/api/resumes/list");
             setResumes(response.data);
         } catch (error) {
             console.error("Error fetching resumes:", error);

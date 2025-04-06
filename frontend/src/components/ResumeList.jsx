@@ -11,7 +11,7 @@ const ResumeList = ({ resumes }) => {
                     <p><strong>Education:</strong> {resume.education}</p>
                     <p><strong>Skills:</strong> {resume.skills.join(", ")}</p>
                     <p><strong>Experience:</strong> {resume.experience}</p>
-                    {resume.fileUrl && <a href={`http://localhost:5000${resume.fileUrl}`} target="_blank" rel="noopener noreferrer" className="text-blue-500">📄 View Resume</a>}
+                    {resume.fileUrl && <a href={`https://resume-builder-2-q4xd.onrender.com/${resume.fileUrl}`} target="_blank" rel="noopener noreferrer" className="text-blue-500">📄 View Resume</a>}
                 </div>
             ))}
         </div>

@@ -34,7 +34,7 @@ function ResumeForm() {
     e.preventDefault();
 
     try {
-      const res = await fetch('http://localhost:5000/api/resumes/add', {
+      const res = await fetch('https://resume-builder-2-q4xd.onrender.com/api/resumes/add', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
