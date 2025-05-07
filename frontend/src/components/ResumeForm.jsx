@@ -149,14 +149,13 @@ function ResumeForm() {
       </form>
       </div>
       <div>
-      {showViewButton && (
+      
         <button
           onClick={() => navigate('/view-resume')}
           style={{ marginTop: '20px', backgroundColor: '#2196F3', color: '#fff', padding: '10px 20px', border: 'none', borderRadius: '6px' }}
         >
           View Resume
         </button>
-      )}
       </div>
     
     </>
